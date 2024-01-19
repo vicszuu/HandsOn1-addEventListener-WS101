@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00NTYtMDEwZC5qcGc.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            height: 100vh;
+            padding-top: 250px;
+            padding-bottom: 100px;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+           
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 50px;
+            background-image: linear-gradient(to right, pink, red);
+            font-weight: bold;
+            color: black;
+            border-radius: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button:hover {
+            background-image: linear-gradient(to right, orange, purple) ;
+            color: #5e5252;
+            border-radius: 40px;
+}
+    </style>
+</head>
+<body>
+    <h1> JavaScript addEventListener() Hands-on.</h1>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button 3</button>
+    <script>
+        document.getElementById("btn1").addEventListener("click", btn1function);
+        document.getElementById("btn2").addEventListener("click", btn2function);
+        document.getElementById("btn3").addEventListener("click", btn3function);
+
+        function btn1function() {
+            alert("Button 1 was clicked!");
+        }
+        function btn2function() {
+            alert("Button 2 was clicked!");
+        }
+        function btn3function() {
+            alert("Button 3 was clicked!");
+        }
+    </script>
+
+</body>
+</html>
